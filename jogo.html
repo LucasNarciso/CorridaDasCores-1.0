@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Corida das cores - Inicio</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src='jogo.js'></script>
+		<style>
+			a:hover{
+				background-color: white;
+				text-decoration: none;
+				color: grey;
+			}
+			
+			a{
+				color: black;
+			}
+		</style>
+	</head>
+	<body style="background-color: gray;" onload="contagemR(tempo + 1)">
+		<div class="container" style="background-color: white;">
+		
+			<div class="row">
+			
+				<div class="col-md-1 offset-4" style="background-color: orange; width: 90px; height: 30px"></div>
+				<div class="col-md-1" style="background-color: yellow; width: 90px; height: 30px"></div>
+				<div class="col-md-1" style="background-color: purple; width: 90px; height: 30px"></div>
+				<div class="col-md-1" style="background-color: green; width: 90px; height: 30px"></div>
+				
+			</div>
+			
+			<div align="center" class="col-md-4 offset-4"><p>Criado por: Lucas Narciso</p></div>
+
+			<div class="row">
+				<div class="col-md-12" align="center">
+				
+					<br>
+					
+					<h1> Corrida das Cores </h1>
+					
+					<br>
+					
+					<h3> : : : Jogo : : : </h3>
+					
+					<br>
+					
+				</div>
+				
+				<div class="col-md-12" align="center">
+					<h3 style="color: red; height: 30px;" id="contagemRegressiva"></h3>
+				</div>
+				
+				<div class="col-md-6 offset-3">
+					<table class="table" style="border: 2px solid black;">
+						<tr style="border-bottom: 2px solid black">
+							<td style="background-color: orange; border: 2px solid black; text-align: center;">
+								<h5 style="color: black;"> Laranja </h5>
+							</td>
+							<td id="l1" width="50px"></td>
+							<td id="l2" width="50px"></td>
+							<td id="l3" width="50px"></td>
+							<td id="l4" width="50px"></td>
+							<td id="l5" width="50px"></td>
+							<td id="l6" width="50px"></td>
+							<td id="l7" width="50px"></td>
+							<td id="l8" width="50px"></td>
+							<td id="l9" width="50px"></td>
+							<td id="l10" width="50px"></td>
+							<td style="background: url('imagens/chegada.jpg'); width: 50px;"></td>
+						<tr>
+						<tr style="border-bottom: 2px solid black">
+							<td style="background-color: yellow; border: 2px solid black; text-align: center;">
+								<h5 style="color: black;"> Amarelo </h5>
+							</td>
+							<td id="a1" width="50px"></td>
+							<td id="a2" width="50px"></td>
+							<td id="a3" width="50px"></td>
+							<td id="a4" width="50px"></td>
+							<td id="a5" width="50px"></td>
+							<td id="a6" width="50px"></td>
+							<td id="a7" width="50px"></td>
+							<td id="a8" width="50px"></td>
+							<td id="a9" width="50px"></td>
+							<td id="a10" width="50px"></td>
+							<td style="background: url('imagens/chegada.jpg');"></td>
+						<tr>
+						<tr style="border-bottom: 2px solid black">
+							<td style="background-color: purple; border: 2px solid black; text-align: center;">
+								<h5 style="color: black;"> Roxo </h5>
+							</td>
+							<td id="r1" width="50px"></td>
+							<td id="r2" width="50px"></td>
+							<td id="r3" width="50px"></td>
+							<td id="r4" width="50px"></td>
+							<td id="r5" width="50px"></td>
+							<td id="r6" width="50px"></td>
+							<td id="r7" width="50px"></td>
+							<td id="r8" width="50px"></td>
+							<td id="r9" width="50px"></td>
+							<td id="r10" width="50px"></td>
+							<td style="background: url('imagens/chegada.jpg');"></td>
+							</td>
+						<tr>
+						<tr style="border-bottom: 2px solid black">
+							<td style="background-color: green; border: 2px solid black; text-align: center;">
+								<h5 style="color: black;"> Verde </h5>
+							</td>
+							<td id="v1" width="50px"></td>
+							<td id="v2" width="50px"></td>
+							<td id="v3" width="50px"></td>
+							<td id="v4" width="50px"></td>
+							<td id="v5" width="50px"></td>
+							<td id="v6" width="50px"></td>
+							<td id="v7" width="50px"></td>
+							<td id="v8" width="50px"></td>
+							<td id="v9" width="50px"></td>
+							<td id="v10" width="50px"></td>
+							<td style="background: url('imagens/chegada.jpg');"></td>
+						<tr>
+					</table>
+					
+				</div>
+				
+				<div class="col-md-3"></div>
+				
+				<div class=col-md-12>
+					<br>
+					
+					<h3 align="center"> Resultado: <span id="vencedor"></span> </h3>
+					
+					<br>
+					
+					<div align="center">
+						<button type="button" class="btn btn-secondary" onclick="menu()"> Voltar </button>
+						
+						<br>
+						
+						<span id="controle">
+						
+						<br>
+						
+						</span>
+					</div>
+					
+					<br>
+				</div>
+				
+			</div>
+			
+			<div class="row">
+			
+				<div class="col-md-1 offset-4" style="background-color: orange; width: 90px; height: 15px"></div>
+				<div class="col-md-1" style="background-color: yellow; width: 90px; height: 15px"></div>
+				<div class="col-md-1" style="background-color: purple; width: 90px; height: 15px"></div>
+				<div class="col-md-1" style="background-color: green; width: 90px; height: 15px"></div>
+				
+			</div>
+			
+		</div>
+	</body>
+
+</html>

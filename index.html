@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Corida das cores - Inicio</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script>
+			'use strict'
+			function play(){
+				window.location.href = 'jogo.html?';
+			}
+		</script>
+		
+		<style>
+			a:hover{
+				background-color: white;
+				text-decoration: none;
+				color: grey;
+			}
+			
+			a{
+				color: black;
+			}
+		</style>
+	</head>
+	<body style="background-color: gray;">
+		<div class="container" style="background-color: white;">
+		
+			<div class="row">
+			
+				<div class="col-md-1 offset-4" style="background-color: orange; width: 90px; height: 30px"></div>
+				<div class="col-md-1" style="background-color: yellow; width: 90px; height: 30px"></div>
+				<div class="col-md-1" style="background-color: purple; width: 90px; height: 30px"></div>
+				<div class="col-md-1" style="background-color: green; width: 90px; height: 30px"></div>
+				
+			</div>
+
+			<div align="center" class="col-md-4 offset-4"><p>Criado por: Lucas Narciso</p></div>
+			
+			<div class="row">
+			
+				<div class="col-md-12" align="center">
+				
+					<br>
+				
+					<div class="col-md-4">
+						<a href="sobre.html" >
+							<h1> Corrida das Cores </h1>
+						</a>
+					</div>
+					
+					<br>
+					
+					<h3> : : : Início : : : </h3>
+					
+					<br>
+					
+				</div>
+				
+				<div class="col-md-4 offset-4">
+					<div style="padding: 10px; border: 2px solid black;">
+						<h5 align="center">Como Funciona:</h5>
+						<p>
+							Temos quatro cores: Laranja, Amarelo, Roxo e Verde. Essas cores irão "disputar uma corrida".
+							A cor que chegar ao final do percurso, será a ganhadora. Caso haja empate, aparecerá
+							o botão de Reiniciar.
+						</p>
+					</div>
+					<br>
+					<div style="padding: 10px; border: 2px solid black; width: 100%;">
+						<h5 align="center">O Que Fazer:</h5>
+						<p>
+							Escolha em mente uma das quatro cores, e aperte play... Logo após a contagem regressiva,
+							as cores irão "correr". Agora é só torcer pela sua!!
+						</p>	
+					</div>
+				</div>
+				
+				<div class="col-md-12" align="center">
+					
+					<br>
+					
+					<div>
+						<button type="button" class="btn btn-primary" onclick="play()"> Play </button>
+					</div>
+					
+					<br>
+					
+				</div>
+				
+				<div class="col-md-4 offset-4">
+					<div style="padding: 10px; border: 2px solid black;">
+						<h5 align="center">Especificações:</h5>
+						<p>
+							-As cores possuem um algoritmo de locomoção de forma aleatória. A cada segundo
+							que se passa, após a contagem, elas possuem uma chance de 50% para avançar ou
+							permanecer no mesmo local.
+							<br>
+							-Mesmo com esse algoritmo pode haver um empate entre duas cores, com uma probabilidade bem baixa.
+							<br>
+							-Caso consiga um empate com três cores, pode considerar-se com muita sorte!
+							<br>
+							-Conseguiu um empate com todas?! Caramba, quanta sorte!!!!
+						</p>
+					</div>
+					<br>
+				</div>
+			
+			</div>
+			
+			<div class="row">
+			
+				<div class="col-md-1 offset-4" style="background-color: orange; width: 90px; height: 15px"></div>
+				<div class="col-md-1" style="background-color: yellow; width: 90px; height: 15px"></div>
+				<div class="col-md-1" style="background-color: purple; width: 90px; height: 15px"></div>
+				<div class="col-md-1" style="background-color: green; width: 90px; height: 15px"></div>
+				
+			</div>
+			
+		</div>
+	</body>
+
+</html>
