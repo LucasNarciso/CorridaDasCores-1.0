@@ -10,4 +10,4 @@
 <p> Quando o botão PLAY for pressionado, o jogo se iniciará. São basicamente 4 cores em uma corrida, a cor que chegar primeiro vence. Caso aconteça um empate basta pressionar o botão de REINICIAR ou atualizar a página do navegador</p>
 
 <h4> Links: </h4>
-<a src="https://lucasnarciso.github.io/CorridaDasCores.github.io/"> Acessar Site </a>
+<p> Acessar Site: https://lucasnarciso.github.io/CorridaDasCores.github.io/ </p>
